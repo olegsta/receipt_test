@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Generator</title>
+</head>
+<body>
+  <h1>Generate Recipe</h1>
+
+  <form id="recipe-form" action="/recipes/generate" method="post">
+    <label for="ingredients">Enter ingredients (comma separated):</label>
+    <input type="text" id="ingredients" name="ingredients">
+    <button type="submit">Generate Recipe</button>
+  </form>
+  <div id="recipe-container"></div>
+  <div id="loader" style="display: none;">Loading...</div>
+</body>
