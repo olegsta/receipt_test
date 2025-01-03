@@ -5,9 +5,9 @@
 ADMIN PANEL for user http://94.237.101.229/admin/user
 
 <p>
-  <img src="https://github.com/olegsta/receipt_test/blob/master/public/1.png" width="600" title="hover text">
-  <img src="https://github.com/olegsta/receipt_test/blob/master/public/2.png" width="600" alt="accessibility text">
-  <img src="https://github.com/olegsta/receipt_test/blob/master/public/3.png" width="600" alt="accessibility text">
+  <img src="https://github.com/olegsta/receipt_test/blob/main/public/1.png" width="600" title="hover text">
+  <img src="https://github.com/olegsta/receipt_test/blob/main/public/2.png" width="600" alt="accessibility text">
+  <img src="https://github.com/olegsta/receipt_test/blob/main/public/3.png" width="600" alt="accessibility text">
 </p>
 
 JSON API with Ruby on Rails framework with user admin panel
