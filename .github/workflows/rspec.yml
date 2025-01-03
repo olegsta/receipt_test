@@ -1,11 +1,11 @@
-name: Code style
+name: Rspec test
 on:
   - push
   - pull_request
 
 jobs:
-  rubocop:
-    name: RuboCop
+  rspec:
+    name: Run RSpec tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,6 +21,6 @@ jobs:
           gem install bundler
           bundle install --jobs 4 --retry 3
 
-      - name: Run RuboCop
+      - name: Run RSpec
         run: |
-          rubocop --parallel
+          bundle exec rspec

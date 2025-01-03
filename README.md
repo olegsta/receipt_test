@@ -1,16 +1,15 @@
 # README
 
 ![CI](https://github.com/olegsta/receipt_test/actions/workflows/code-style.yml/badge.svg)
+![CI](https://github.com/olegsta/receipt_test/actions/workflows/rspec.yml/badge.svg)
 
-ADMIN PANEL for user http://94.237.101.229/admin/user
+Endpoint for receive recipes http://94.237.82.85/recipes/generate
 
 <p>
   <img src="https://github.com/olegsta/receipt_test/blob/main/public/1.png" width="600" title="hover text">
   <img src="https://github.com/olegsta/receipt_test/blob/main/public/2.png" width="600" alt="accessibility text">
   <img src="https://github.com/olegsta/receipt_test/blob/main/public/3.png" width="600" alt="accessibility text">
 </p>
-
-JSON API with Ruby on Rails framework with user admin panel
 
 * Ruby version: 3.0.1
 * Rails version: 6.1.7.3
@@ -36,9 +35,5 @@ JSON API with Ruby on Rails framework with user admin panel
 
 <b>Endpoints</b>: <br>
 ```
-  Admin Panel:                 /admin                                      RailsAdmin::Engine
-  World Leaders users   GET    /api/v1/users/world_leaders(.:format)       api/v1/users#world_leaders
-  Country Leaders users GET    /api/v1/users/country_leaders(:format)      api/v1/users#country_leaders
-  Create new users      POST   /api/v1/users(.:format)                     api/v1/users#create                  
-  Create new ratings    POST   /api/v1/ratings(.:format)                   api/v1/ratings#create     
+  Receive new recipes    POST   /recipes/generate(.:format)                   recipes#generate
 ```

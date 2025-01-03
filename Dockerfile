@@ -1,6 +1,6 @@
 FROM ruby:3.0.1
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
-WORKDIR /my_leaderboard
+WORKDIR /receipt_test
 COPY Gemfile* ./
 # Add Yarn repository
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

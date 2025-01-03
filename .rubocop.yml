@@ -1,0 +1,22 @@
+Metrics/BlockLength:
+  Max: 201
+
+AllCops:
+  NewCops: disable
+  SuggestExtensions: false
+  Exclude:
+    - './app/models/**'
+    - './app/mailers/**'
+    - './app/helpers/**'
+    - './db/**/*'
+    - './bin/**/*'
+    - './config/**/*'
+    - './vendor/**/*'
+    - './docs/**/*'
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/PerlBackrefs:
+  Enabled: false

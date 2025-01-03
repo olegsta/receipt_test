@@ -32,8 +32,10 @@
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+# /config/master.key
 
-/config/credentials/development.key
+# /config/credentials/development.key
 
-/config/credentials/main.key
+# /config/credentials/main.key
+
+# /config/credentials/production.key

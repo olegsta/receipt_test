@@ -11,20 +11,20 @@ services:
     networks:
       - receipt-docker-network
 
-  sidekiq:
-    depends_on:
-      - 'pg_receipt_db_new'
-      - 'redis'
-    build: .
-    container_name: receipt-sidekiq
-    command: bundle exec sidekiq
-    volumes:
-      - '.:/my_receipt'
-      - '/my_receipt/tmp'
-    environment:
-      REDIS_URL_SIDEKIQ: redis://redis:6379/1
-    networks:
-      - receipt-docker-network
+  # sidekiq:
+  #   depends_on:
+  #     - 'pg_receipt_db_new'
+  #     - 'redis'
+  #   build: .
+  #   container_name: receipt-sidekiq
+  #   command: bundle exec sidekiq
+  #   volumes:
+  #     - '.:/my_receipt'
+  #     - '/my_receipt/tmp'
+  #   environment:
+  #     REDIS_URL_SIDEKIQ: redis://redis:6379/1
+  #   networks:
+  #     - receipt-docker-network
 
   pg_receipt_db_new:
     image: postgres:15.2-bullseye
@@ -48,7 +48,7 @@ services:
     container_name: receipt-main
     restart: always
     volumes:
-      - .:/my_receipt
+      - .:/receipt_test
     environment:
       REDIS_URL_SIDEKIQ: redis://redis:6379/1
     depends_on:
